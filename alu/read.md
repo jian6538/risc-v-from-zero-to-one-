@@ -6,3 +6,4 @@ and another will come from instruction as below
 addi x5, x6, 100
 
 nevertheless , alu will receive from control unit to perform operation base on the operand code (addition , substraction ...)
+as well as produce flag
