@@ -24,3 +24,5 @@ next, we will design a program counter that hold the next instruction to be proc
 
 later on , we need to design a instruction memory that get the address from the program counter and then extract the instruction from the address to process later on 
 
+next we will have a module for register file which store data for cpu to process total of 32 register with 32bit, for common architeture the register file is 2 read port and 1 write port
+
