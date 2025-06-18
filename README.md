@@ -21,3 +21,6 @@ Building arithmatic logic unit!!
 the first and most important to step to start is by building an ALU which is very basic component in the cpu. By trying to write verilog or system verilog code on ALU, basic fundamental of digital circuit can be learned and implement. The code can be found in the folder above trying to build it yourself as well to learn more about the ALU 
 
 next, we will design a program counter that hold the next instruction to be processed, it is very simple and easing as well as important in computer architeture, it updates every clock cycle and increase by 4.
+
+later on , we need to design a instruction memory that get the address from the program counter and then extract the instruction from the address to process later on 
+
