@@ -33,3 +33,6 @@ later on , we need to build a control module which is like a brain of computer t
 
 the datapath is a diagram of how each of the module flow from one module to another module. 
 
+now , we successfully design a single cycle risc v , next we will make our risv more efficient and faster by introducing pipelining 
+
+
