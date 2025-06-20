@@ -26,3 +26,10 @@ later on , we need to design a instruction memory that get the address from the 
 
 next we will have a module for register file which store data for cpu to process total of 32 register with 32bit, for common architeture the register file is 2 read port and 1 write port
 
+later on , we need to create a module for the memory , which store all the address and data in a computer , its work is to load which is load a word from memory to the register , and store which is store the information from the register to the memory.
+
+later on , we need to build a control module which is like a brain of computer to control all the signal and how does it flow.
+
+
+the datapath is a diagram of how each of the module flow from one module to another module. 
+
