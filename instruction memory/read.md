@@ -17,11 +17,7 @@ for the another 5 bit (2^5) rs1. It tells the specific location of source 1.
 for the another 5 bit (2^5) rs2. It tells the specific location of source 2. 
 as well as the immediate , which tell the processor to directly use that number 
 
-Bits [6:0] are always wired to the opcode input of the Control Unit.
-Bits [11:7] are always wired to the write_addr (rd) port of the Register File.
-Bits [19:15] are always wired to the read_addr1 (rs1) port of the Register File.
-Bits [24:20] are always wired to the read_addr2 (rs2) port of the Register File.
-Bits [31:7] (in their various combinations) are always wired to the Immediate Generator.
+risc v has different type of instruction normally the [6:0] is the opcode of the instruction and base on the opcode , the instruction is divided into several part like the image below 
 ![1_Mznpgo4kFWIayagpftLmTg](https://github.com/user-attachments/assets/ae5f28e3-15f2-445b-8ff8-ef462dc5237a)
 
 for the opcode , the basic risc v has 6 instruction type which is register to register(R-type), immediate(i-type) , store (s-type) , branch(b-type) , upper immediate(u-type),jump (j-type) 
