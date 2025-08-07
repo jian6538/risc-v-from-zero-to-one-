@@ -19,3 +19,20 @@ durng the instruction 2 instruction decode stage , it need the value of x5 immed
 one of the technique is by waiting one more cycle and hold the instruction 2 , let the instruction 1 goes to memory stage and instruction 2 is hold , but this way will make the processor slow. Other technique used is by compiler and out of order processor that execute unrelated instruction first that do not use x5. 
 
 # 3. Flushing
+same as the above, flushing can think like you flush your toilet, this is because the instruction that are executed need to be erase so that it does not produce error this happen with the instruction branch   
+0x100: beq x1, x2, L1   // Branch to address L1 if x1 == x2  
+
+0x104: add x5, x6, x7   // <-- Incorrectly fetched if branch is taken  
+
+0x108: sub x8, x9, x10  // <-- Incorrectly fetched if branch is taken  
+
+0x10C: or x11, x12, x13 // <-- Incorrectly fetched if branch is taken  
+
+...  
+
+
+    
+L1:    and x14, x15, x16 // The correct instruction  
+
+
+this is due to the memory stage is at stage 4 but the processor is already doing the pipeline of the previous, so when the processor fetch from the memory , the previous instruction is already executed and need to be erase, this as well make the waste of resource, to prevent it engineer has invent some of the technique such as make the branch earlier , Branch Delay Slot and so forth 
